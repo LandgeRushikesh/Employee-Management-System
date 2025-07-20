@@ -2,7 +2,7 @@ import React from "react";
 
 function TaskStatus() {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center gap-4">
       {[
         {
           count: 0,
@@ -29,7 +29,7 @@ function TaskStatus() {
           borderColor: "border-orange-600",
         },
       ].map((ele) => (
-        <div className={`mr-3 ${ele.bgColor} px-3 py-5 w-[45%] border-2 ${ele.borderColor} rounded-lg`} key={ele.taskStatus}>
+        <div className={`${ele.bgColor} px-3 py-5 w-[45%] border-2 ${ele.borderColor} rounded-lg`} key={ele.taskStatus}>
           <h2 className="text-2xl font-bold">{ele.count}</h2>
           <h3 className="text-2xl font-bold">{ele.taskStatus}</h3>
         </div>
