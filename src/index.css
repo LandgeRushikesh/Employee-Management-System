@@ -5,3 +5,6 @@
 .tasklist::-webkit-scrollbar{
     display: none;
 }
+.assigned-task::-webkit-scrollbar{
+    display: none;
+}
