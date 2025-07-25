@@ -11,10 +11,10 @@ function App() {
     const exisitingEmployeeData = localStorage.getItem("Employees")
     const exisitingAdminData = localStorage.getItem("Admins")
 
-    if(!exisitingEmployeeData){
+    if(exisitingEmployeeData){
       setEmployeeDetails();
     }
-    if(!exisitingAdminData){
+    if(exisitingAdminData){
       setAdminDetails();
     }
   },[])
